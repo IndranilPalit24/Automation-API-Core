@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-09T14:39:31 IST" name="Default suite" finished-at="2025-07-09T14:39:34 IST" duration-ms="2527">
+    <groups>
+    </groups>
+    <test started-at="2025-07-09T14:39:31 IST" name="Default test" finished-at="2025-07-09T14:39:34 IST" duration-ms="2527">
+      <class name="RestTest.getCall">
+        <test-method signature="getTeamDetails()[pri:0, instance:RestTest.getCall@8297b3a]" started-at="2025-07-09T14:39:31 IST" name="getTeamDetails" finished-at="2025-07-09T14:39:34 IST" duration-ms="2493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTeamDetails -->
+      </class> <!-- RestTest.getCall -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
