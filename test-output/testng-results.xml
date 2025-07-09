@@ -1,13 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T14:39:31 IST" name="Default suite" finished-at="2025-07-09T14:39:34 IST" duration-ms="2527">
+  <suite started-at="2025-07-09T20:38:49 IST" name="Default suite" finished-at="2025-07-09T20:38:52 IST" duration-ms="3061">
     <groups>
     </groups>
-    <test started-at="2025-07-09T14:39:31 IST" name="Default test" finished-at="2025-07-09T14:39:34 IST" duration-ms="2527">
+    <test started-at="2025-07-09T20:38:49 IST" name="Default test" finished-at="2025-07-09T20:38:52 IST" duration-ms="3061">
       <class name="RestTest.getCall">
-        <test-method signature="getTeamDetails()[pri:0, instance:RestTest.getCall@8297b3a]" started-at="2025-07-09T14:39:31 IST" name="getTeamDetails" finished-at="2025-07-09T14:39:34 IST" duration-ms="2493" status="PASS">
+        <test-method signature="getTeamDetails()[pri:0, instance:RestTest.getCall@fa4c865]" started-at="2025-07-09T20:38:49 IST" name="getTeamDetails" finished-at="2025-07-09T20:38:52 IST" duration-ms="3030" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected header "Content-Length" was not "7941", was "5917". Headers are:
+Date=Wed, 09 Jul 2025 15:08:52 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=5917
+Connection=keep-alive
+CF-RAY=95c8bd37dcc62edc-BOM
+Content-Encoding=gzip
+Vary=Accept-Encoding
+X-Powered-By=PHP/7.4.33
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Headers=Origin, X-Requested-With, Content-Type, Accept, X_API_KEY, OPTION, OPTIONS, XMLHttpRequest
+Access-Control-Allow-Methods=GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Max-Age=1000
+cf-cache-status=DYNAMIC
+Report-To={"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=zGePB8hFxagYO25WPIF2Yuzxk7VUlJ93pY5pF32S0L4T6YoyHWx7XC590v%2FHXrrYQxoOh7UQNTZ7PXIdqLaFi66jPhou4ssALAbAhPdi3mc5gKo7RQ3oq5E5bPaDZ5vYHyEzTsU%3D"}],"group":"cf-nel","max_age":604800}
+NEL={"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server=cloudflare
+alt-svc=h3=":443"; ma=86400
+server-timing=cfL4;desc="?proto=TCP&rtt=97480&min_rtt=80087&rtt_var=42456&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3123&recv_bytes=798&delivery_rate=52892&cwnd=123&unsent_bytes=0&cid=04387b577262478d&ts=835&x=0"
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected header "Content-Length" was not "7941", was "5917". Headers are:
+Date=Wed, 09 Jul 2025 15:08:52 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=5917
+Connection=keep-alive
+CF-RAY=95c8bd37dcc62edc-BOM
+Content-Encoding=gzip
+Vary=Accept-Encoding
+X-Powered-By=PHP/7.4.33
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Headers=Origin, X-Requested-With, Content-Type, Accept, X_API_KEY, OPTION, OPTIONS, XMLHttpRequest
+Access-Control-Allow-Methods=GET, PUT, POST, DELETE, OPTIONS
+Access-Control-Max-Age=1000
+cf-cache-status=DYNAMIC
+Report-To={"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=zGePB8hFxagYO25WPIF2Yuzxk7VUlJ93pY5pF32S0L4T6YoyHWx7XC590v%2FHXrrYQxoOh7UQNTZ7PXIdqLaFi66jPhou4ssALAbAhPdi3mc5gKo7RQ3oq5E5bPaDZ5vYHyEzTsU%3D"}],"group":"cf-nel","max_age":604800}
+NEL={"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server=cloudflare
+alt-svc=h3=":443"; ma=86400
+server-timing=cfL4;desc="?proto=TCP&rtt=97480&min_rtt=80087&rtt_var=42456&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3123&recv_bytes=798&delivery_rate=52892&cwnd=123&unsent_bytes=0&cid=04387b577262478d&ts=835&x=0"
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:191)
+at io.restassured.internal.ValidatableResponseOptionsImpl.header(ValidatableResponseOptionsImpl.java:114)
+at RestTest.getCall.getTeamDetails(getCall.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTeamDetails -->
